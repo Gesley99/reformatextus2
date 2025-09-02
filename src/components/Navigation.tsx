@@ -73,7 +73,7 @@ const Navigation = () => {
               variant={isScrolled ? "hero" : "academic"} 
               size="sm"
               className={!isScrolled ? "bg-primary-foreground/10 backdrop-blur-sm border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/20" : ""}
-              onClick={() => window.open('https://wa.me/556196212692+55 61 9621-2692?text=Olá, gostaria de um orçamento para o meu trabalho', '_blank')}
+              onClick={() => window.open('https://wa.me/61996212692','_blank')}
             >
               Orçamento
             </Button>
@@ -119,7 +119,7 @@ const Navigation = () => {
                   variant="hero" 
                   size="sm" 
                   className="w-full"
-                  onClick={() => window.open('https://wa.me/556196212692+55 61 9621-2692?text=Olá, gostaria de um orçamento para o meu trabalho', '_blank')}
+                  onClick={() => window.open('https://wa.me/61996212692','_blank')}
                 >
                   Solicitar Orçamento
                 </Button>

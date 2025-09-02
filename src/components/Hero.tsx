@@ -84,7 +84,7 @@ const Hero = () => {
               variant="cta" 
               size="lg" 
               className="text-lg px-8 py-6"
-              onClick={() => window.open('https://wa.me/556196212692+55 61 9621-2692?text=Olá, gostaria de um orçamento para o meu trabalho', '_blank')}
+              onClick={() => window.open('https://wa.me/61996212692','_blank')}
             >
               Solicitar Orçamento
               <ArrowRight className="w-5 h-5" />

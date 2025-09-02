@@ -220,12 +220,7 @@ const Contact = () => {
                 <Button
                   variant="academic"
                   className="w-full"
-                  onClick={() =>
-                    window.open(
-                      "https://wa.me/556196212692+55 61 9621-2692?text=Olá, gostaria de um orçamento para o meu trabalho",
-                      "_blank"
-                    )
-                  }
+                  onClick={() => window.open('https://wa.me/61996212692','_blank')}
                 >
                   <MessageCircle className="w-5 h-5 mr-2" />
                   Conversar no WhatsApp

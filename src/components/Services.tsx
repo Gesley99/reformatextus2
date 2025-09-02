@@ -1,6 +1,7 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, FileText, GraduationCap, Users, Clock, CheckCircle } from "lucide-react";
+import { Dialog, DialogTrigger, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 
 const services = [
   {
@@ -11,9 +12,9 @@ const services = [
   },
   {
     icon: FileText,
-    title: "Dissertações & Teses",
-    description: "Pesquisas acadêmicas de mestrado e doutorado com excelência científica.",
-    features: ["Metodologia rigorosa", "Bibliografia atualizada", "Defesa preparada"],
+    title: "Projetos de Extensão",
+    description: "Atividades acadêmicas aplicadas à comunidade, com foco em impacto social e formação prática.",
+    features: ["Planejamento estruturado", "Objetivos definidos", "Resultados transformadores"],
   },
   {
     icon: BookOpen,
@@ -80,11 +81,50 @@ const Services = () => {
                       <span className="text-foreground">{feature}</span>
                     </div>
                   ))}
-                  <div className="pt-4">
-                    <Button variant="hero" className="w-full">
-                      Saiba Mais
-                    </Button>
-                  </div>
+                  
+<div className="pt-4">
+  {service.title === "Projetos de Extensão" ? (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="hero" className="w-full">Saiba Mais</Button>
+      </DialogTrigger>
+      <DialogContent className="max-w-xl">
+        <DialogHeader>
+          <DialogTitle>Projetos de Extensão — Como funciona</DialogTitle>
+          <DialogDescription></DialogDescription>
+        </DialogHeader>
+        <div className="space-y-6 text-foreground">
+          <div>
+            <h4 className="font-semibold mb-2">O que fazemos</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Estruturamos o projeto conforme as diretrizes acadêmicas.</li>
+              <li>Elaboramos cronograma, metodologia e relatórios.</li>
+              <li>Orientamos sobre instrumentos de coleta de dados.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">O que não fazemos</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Não coletamos fotos, dados pessoais ou entrevistas.</li>
+              <li>Não executamos atividades de campo.</li>
+              <li>Essas ações ficam sob responsabilidade da equipe do aluno.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">Entregamos</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Documento do projeto.</li>
+              <li>Cronograma básico.</li>
+            </ul>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  ) : (
+    <Button variant="hero" className="w-full">Saiba Mais</Button>
+  )}
+</div>
+
                 </CardContent>
               </Card>
             );
@@ -101,7 +141,7 @@ const Services = () => {
               Entre em contato conosco para discutir suas necessidades específicas. 
               Criamos soluções sob medida para cada projeto acadêmico.
             </p>
-            <Button variant="cta" size="lg" onClick={() => window.open('https://wa.me/556196212692+55 61 9621-2692', '_blank')}>
+            <Button variant="cta" size="lg" onClick={() => window.open('https://wa.me/61996212692','_blank')}>
               Conversar com Especialista
             </Button>
           </div>

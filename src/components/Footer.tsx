@@ -23,7 +23,7 @@ const Footer = () => {
                 variant="ghost" 
                 size="icon" 
                 className="w-8 h-8 text-primary-foreground/60 hover:text-primary-foreground hover:bg-primary-foreground/10"
-                onClick={() => window.open('https://www.instagram.com/textusacademico/', '_blank')}
+                onClick={() => window.open('https://wa.me/61996212692','_blank')}
               >
                 <Instagram className="w-4 h-4" />
               </Button>
@@ -82,7 +82,7 @@ const Footer = () => {
                 variant="secondary" 
                 size="sm" 
                 className="text-sm"
-                onClick={() => window.open('https://wa.me/556196212692+55 61 9621-2692?text=Olá, gostaria de um orçamento para o meu trabalho', '_blank')}
+                onClick={() => window.open('https://wa.me/61996212692','_blank')}
               >
                 Solicitar Orçamento
               </Button>
