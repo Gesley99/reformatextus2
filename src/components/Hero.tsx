@@ -30,26 +30,35 @@ const Hero = () => {
             
             
           <div className="flex flex-col items-center gap-3 select-none mt-4">
-            {/* Line 1: TEXTUS with stylized E */}
+            {/* Linha 1: TEXTUS com 'E' estilizado */}
             <div className="flex items-center gap-0 leading-none">
               <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">T</span>
-              {/* Stylized E as inline SVG (approximation) */}
-              <svg aria-hidden="true" width="62" height="76" viewBox="0 0 62 76" className="mx-1">
-                <path d="M8 8h38v10H20v16h24v10H20v16h26v10H8V8z" fill="#0F172A"/>
-                {/* small book mark */}
-                <path d="M22 46c6 0 10 4 10 10v12l-6-4-6 4V56c0-6 4-10 10-10z" fill="#0F172A"/>
+              {/* 'E' estilizado inspirado no logo */}
+              <svg aria-hidden="true" width="70" height="84" viewBox="0 0 70 84" className="mx-1">
+                <path d="M10 10h48v12H22v16h30v12H22v16h36v12H10V10z" fill="#0F172A"/>
+                <path d="M24 56c7 0 12 5 12 12v14l-7-5-7 5V68c0-7 5-12 12-12z" fill="#0F172A"/>
               </svg>
               <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">XTUS</span>
             </div>
-            {/* Yellow swoosh */}
-            <svg aria-hidden="true" viewBox="0 0 320 40" className="w-[220px] md:w-[320px]">
-              <path d="M10 30c60-28 140-28 300 0" fill="none" stroke="#E0B03B" strokeWidth="8" strokeLinecap="round"/>
+            {/* Traço amarelo com leve brilho */}
+            <svg aria-hidden="true" viewBox="0 0 360 60" className="w-[240px] md:w-[340px]">
+              <defs>
+                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+                  <feGaussianBlur stdDeviation="4" result="blur"/>
+                  <feMerge>
+                    <feMergeNode in="blur"/>
+                    <feMergeNode in="SourceGraphic"/>
+                  </feMerge>
+                </filter>
+              </defs>
+              <path d="M15 40c70-34 170-34 330 0" fill="none" stroke="#E0B03B" strokeWidth="9" strokeLinecap="round" filter="url(#glow)"/>
             </svg>
-            {/* Line 2: ACADÊMICO */}
+            {/* Linha 2: ACADÊMICO */}
             <div>
               <span style={{fontFamily:"Cinzel, serif"}} className="text-3xl md:text-4xl font-extrabold tracking-wide">ACADÊMICO</span>
             </div>
           </div>
+        </div>
 
           </div>
           
@@ -62,7 +71,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <BookOpen className="w-6 h-6 text-secondary" />
-              <span className="font-medium">TCC & Dissertações</span>
+              <span className="font-medium">Consultoria Acadêmica</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <Award className="w-6 h-6 text-secondary" />

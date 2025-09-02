@@ -36,7 +36,7 @@ const About = () => {
         {/* Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-playfair font-bold text-foreground mb-6">
-            Sobre a <span className="gradient-primary bg-clip-text text-transparent">Textus Acadêmico</span>
+            Sobre a <span className="gradient-primary bg-clip-text text-transparent">TEXTUS ACADÊMICO</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto text-balance">
             Somos especialistas em excelência acadêmica, comprometidos em transformar 
@@ -57,7 +57,7 @@ const About = () => {
               </h3>
               <p className="text-muted-foreground text-lg leading-relaxed">
                 Fundada por especialistas com vasta experiência em pesquisa acadêmica, 
-                a Textus Acadêmico nasceu da paixão por transformar conhecimento em 
+                a TEXTUS ACADÊMICO nasceu da paixão por transformar conhecimento em 
                 trabalhos de excelência.
               </p>
             </div>
@@ -107,6 +107,26 @@ const About = () => {
                       </div>
                     );
                   })}
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Credentials */}
+            <Card className="shadow-card">
+              <CardContent className="p-6">
+                <div className="space-y-3 text-sm text-muted-foreground">
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
