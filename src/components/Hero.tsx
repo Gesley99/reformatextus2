@@ -57,7 +57,6 @@ const Hero = () => {
             <div>
               <span style={{fontFamily:"Cinzel, serif"}} className="text-3xl md:text-4xl font-extrabold tracking-wide">ACADÊMICO</span>
             </div>
-          </div>
         </div>
 
           </div>
