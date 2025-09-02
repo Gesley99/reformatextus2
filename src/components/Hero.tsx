@@ -34,10 +34,7 @@ const Hero = () => {
             <div className="flex items-center gap-0 leading-none">
               <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">T</span>
               {/* 'E' estilizado inspirado no logo */}
-              <svg aria-hidden="true" width="70" height="84" viewBox="0 0 70 84" className="mx-1">
-                <path d="M10 10h48v12H22v16h30v12H22v16h36v12H10V10z" fill="#0F172A"/>
-                <path d="M24 56c7 0 12 5 12 12v14l-7-5-7 5V68c0-7 5-12 12-12z" fill="#0F172A"/>
-              </svg>
+              <img src="/logo-e.png" alt="E estilizado" className="h-[56px] md:h-[68px] mx-1 select-none" />
               <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">XTUS</span>
             </div>
             {/* Traço amarelo com leve brilho */}
