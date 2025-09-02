@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 gradient-secondary rounded-full flex items-center justify-center">
                 <BookOpen className="w-5 h-5 text-secondary-foreground" />
               </div>
-              <span className="text-2xl font-playfair font-bold"><span style={{fontFamily:"Cinzel, serif", textTransform:"uppercase"}}>TEXTUS ACADÊMICO</span></span>
+              <span className="text-2xl font-playfair font-bold">TEXTUS ACADÊMICO</span>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
               Transformando conhecimento em excelência acadêmica. 
@@ -96,7 +96,7 @@ const Footer = () => {
       {/* Bottom Footer */}
       <div className="container mx-auto px-6 lg:px-8 py-6">
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
-          <div>© 2025 <span style={{fontFamily:"Cinzel, serif", textTransform:"uppercase"}}>TEXTUS ACADÊMICO</span>. Todos os direitos reservados.</div>
+          <div>© 2025 TEXTUS ACADÊMICO. Todos os direitos reservados.</div>
           <div className="flex gap-6">
             <a href="#" className="hover:text-primary-foreground transition-colors">
               Privacidade

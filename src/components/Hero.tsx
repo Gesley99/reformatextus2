@@ -28,34 +28,33 @@ const Hero = () => {
               </div>
             </div>
             
-            
-          <div className="flex flex-col items-center gap-3 select-none mt-4">
-            {/* Linha 1: TEXTUS com 'E' estilizado */}
-            <div className="flex items-center gap-0 leading-none">
-              <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">T</span>
-              {/* 'E' estilizado inspirado no logo */}
-              <img src="/logo-e.png" alt="E estilizado" className="h-[56px] md:h-[68px] mx-1 select-none" />
-              <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">XTUS</span>
-            </div>
-            {/* Traço amarelo com leve brilho */}
-            <svg aria-hidden="true" viewBox="0 0 360 60" className="w-[240px] md:w-[340px]">
-              <defs>
-                <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-                  <feGaussianBlur stdDeviation="4" result="blur"/>
-                  <feMerge>
-                    <feMergeNode in="blur"/>
-                    <feMergeNode in="SourceGraphic"/>
-                  </feMerge>
-                </filter>
-              </defs>
-              <path d="M15 40c70-34 170-34 330 0" fill="none" stroke="#E0B03B" strokeWidth="9" strokeLinecap="round" filter="url(#glow)"/>
-            </svg>
-            {/* Linha 2: ACADÊMICO */}
-            <div>
-              <span style={{fontFamily:"Cinzel, serif"}} className="text-3xl md:text-4xl font-extrabold tracking-wide">ACADÊMICO</span>
-            </div>
-        </div>
-
+            <h1 className="text-5xl md:text-7xl font-playfair font-bold text-primary-foreground text-balance">
+              <div className="flex items-center justify-center gap-0 mb-2">
+  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">T</span>
+  <img src="/logo-e.png" alt="E estilizado" className="h-[48px] md:h-[64px] mx-1 select-none" />
+  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">XTUS</span>
+</div>
+              
+              {/* Golden Curved Line */}
+              <div className="flex justify-center my-4">
+                <svg
+                  width="200"
+                  height="20"
+                  viewBox="0 0 200 20"
+                  className="w-48 md:w-64"
+                >
+                  <path
+                    d="M10 15 Q100 5 190 15"
+                    stroke="hsl(var(--secondary))"
+                    strokeWidth="2"
+                    fill="none"
+                    className="drop-shadow-sm"
+                  />
+                </svg>
+              </div>
+              
+              <span className="gradient-secondary bg-clip-text text-transparent block">ACADÊMICO</span>
+            </h1>
           </div>
           
           {/* Subtitle */}
@@ -67,7 +66,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <BookOpen className="w-6 h-6 text-secondary" />
-              <span className="font-medium">Consultoria Acadêmica</span>
+              <span className="font-medium">TCC & Dissertações</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <Award className="w-6 h-6 text-secondary" />
