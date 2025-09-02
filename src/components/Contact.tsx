@@ -233,9 +233,6 @@ const Contact = () => {
               </CardContent>
             </Card>
 
-            {/* Quick Response */}
-            <Card className="gradient-subtle shadow-glow">
-              
           </div>
         </div>
       </div>
