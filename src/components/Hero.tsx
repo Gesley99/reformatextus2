@@ -66,7 +66,7 @@ const Hero = () => {
           <div className="grid md:grid-cols-3 gap-6 mb-12 animate-slide-up">
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <BookOpen className="w-6 h-6 text-secondary" />
-              <span className="font-medium">TCC & Dissertações</span>
+              <span className="font-medium">Consultoria Acadêmica</span>
             </div>
             <div className="flex items-center justify-center gap-3 text-primary-foreground/80">
               <Award className="w-6 h-6 text-secondary" />
