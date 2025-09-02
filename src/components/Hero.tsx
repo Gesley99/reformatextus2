@@ -28,29 +28,29 @@ const Hero = () => {
               </div>
             </div>
             
-            <h1 className="text-5xl md:text-7xl font-playfair font-bold text-primary-foreground text-balance">
-              <span className="block mb-2">Textus</span>
-              
-              {/* Golden Curved Line */}
-              <div className="flex justify-center my-4">
-                <svg
-                  width="200"
-                  height="20"
-                  viewBox="0 0 200 20"
-                  className="w-48 md:w-64"
-                >
-                  <path
-                    d="M10 15 Q100 5 190 15"
-                    stroke="hsl(var(--secondary))"
-                    strokeWidth="2"
-                    fill="none"
-                    className="drop-shadow-sm"
-                  />
-                </svg>
-              </div>
-              
-              <span className="gradient-secondary bg-clip-text text-transparent block">Acadêmico</span>
-            </h1>
+            
+          <div className="flex flex-col items-center gap-3 select-none mt-4">
+            {/* Line 1: TEXTUS with stylized E */}
+            <div className="flex items-center gap-0 leading-none">
+              <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">T</span>
+              {/* Stylized E as inline SVG (approximation) */}
+              <svg aria-hidden="true" width="62" height="76" viewBox="0 0 62 76" className="mx-1">
+                <path d="M8 8h38v10H20v16h24v10H20v16h26v10H8V8z" fill="#0F172A"/>
+                <!-- small book mark -->
+                <path d="M22 46c6 0 10 4 10 10v12l-6-4-6 4V56c0-6 4-10 10-10z" fill="#0F172A"/>
+              </svg>
+              <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">XTUS</span>
+            </div>
+            {/* Yellow swoosh */}
+            <svg aria-hidden="true" viewBox="0 0 320 40" className="w-[220px] md:w-[320px]">
+              <path d="M10 30c60-28 140-28 300 0" fill="none" stroke="#E0B03B" strokeWidth="8" strokeLinecap="round"/>
+            </svg>
+            {/* Line 2: ACADÊMICO */}
+            <div>
+              <span style={{fontFamily:"Cinzel, serif"}} className="text-3xl md:text-4xl font-extrabold tracking-wide">ACADÊMICO</span>
+            </div>
+          </div>
+
           </div>
           
           {/* Subtitle */}
