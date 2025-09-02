@@ -110,10 +110,6 @@ const About = () => {
                 </div>
               </CardContent>
             </Card>
-
-            {/* Credentials */}
-            <Card className="shadow-card">
-              
           </div>
         </div>
       </div>
