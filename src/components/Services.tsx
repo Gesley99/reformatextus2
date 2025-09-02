@@ -19,8 +19,8 @@ const services = [
   {
     icon: BookOpen,
     title: "Artigos Científicos",
-    description: "Artigos para publicação em revistas e congressos acadêmicos.",
-    features: ["Normas de publicação", "Peer review ready", "Indexação preparada"],
+    description: "Elaboração de artigos científicos de qualidade.",
+    features: ["Produção de textos acadêmicos originais", "Referências atualizadas conforme a área", "Estruturação segundo normas científicas"],
   },
   {
     icon: Users,
@@ -82,6 +82,7 @@ const Services = () => {
                     </div>
                   ))}
                   
+
 <div className="pt-4">
   {service.title === "Projetos de Extensão" ? (
     <Dialog>
@@ -102,6 +103,58 @@ const Services = () => {
               <li>Orientamos sobre instrumentos de coleta de dados.</li>
             </ul>
           </div>
+          <div>
+            <h4 className="font-semibold mb-2">O que não fazemos</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Não coletamos fotos, dados pessoais ou entrevistas.</li>
+              <li>Não executamos atividades de campo.</li>
+              <li>Essas ações ficam sob responsabilidade da equipe do aluno.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">Entregamos</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Documento do projeto.</li>
+              <li>Cronograma básico.</li>
+            </ul>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  ) : service.title === "Artigos Científicos" ? (
+    <Dialog>
+      <DialogTrigger asChild>
+        <Button variant="hero" className="w-full">Saiba Mais</Button>
+      </DialogTrigger>
+      <DialogContent className="max-w-xl">
+        <DialogHeader>
+          <DialogTitle>Artigos Científicos — Como funciona</DialogTitle>
+          <DialogDescription></DialogDescription>
+        </DialogHeader>
+        <div className="space-y-6 text-foreground">
+          <div>
+            <h4 className="font-semibold mb-2">Orientamos você a</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Estruturar o artigo conforme padrões científicos reconhecidos.</li>
+              <li>Selecionar e utilizar referências atualizadas e confiáveis.</li>
+              <li>Organizar introdução, metodologia, resultados e discussão de forma coesa.</li>
+            </ul>
+          </div>
+          <div>
+            <h4 className="font-semibold mb-2">Com a nossa orientação você terá</h4>
+            <ul className="list-disc pl-5 space-y-1">
+              <li>Um artigo formatado segundo normas acadêmicas.</li>
+              <li>Um material de apoio com referências revisadas e atuais.</li>
+            </ul>
+          </div>
+        </div>
+      </DialogContent>
+    </Dialog>
+  ) : (
+    <Button variant="hero" className="w-full">Saiba Mais</Button>
+  )}
+</div>
+
           <div>
             <h4 className="font-semibold mb-2">O que não fazemos</h4>
             <ul className="list-disc pl-5 space-y-1">
