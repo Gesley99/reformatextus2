@@ -39,7 +39,7 @@ const Navigation = () => {
             <span className={`text-xl font-playfair font-bold transition-colors ${
               isScrolled ? "text-foreground" : "text-primary-foreground"
             }`}>
-              Textus Acadêmico
+              <span style={{fontFamily:"Cinzel, serif"}}>Textus Acadêmico</span>
             </span>
           </div>
 

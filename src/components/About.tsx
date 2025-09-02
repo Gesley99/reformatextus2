@@ -113,23 +113,7 @@ const About = () => {
 
             {/* Credentials */}
             <Card className="shadow-card">
-              <CardContent className="p-6">
-                <div className="space-y-3 text-sm text-muted-foreground">
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
+              
           </div>
         </div>
       </div>
