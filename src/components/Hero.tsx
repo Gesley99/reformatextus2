@@ -36,7 +36,7 @@ const Hero = () => {
               {/* Stylized E as inline SVG (approximation) */}
               <svg aria-hidden="true" width="62" height="76" viewBox="0 0 62 76" className="mx-1">
                 <path d="M8 8h38v10H20v16h24v10H20v16h26v10H8V8z" fill="#0F172A"/>
-                <!-- small book mark -->
+                {/* small book mark */}
                 <path d="M22 46c6 0 10 4 10 10v12l-6-4-6 4V56c0-6 4-10 10-10z" fill="#0F172A"/>
               </svg>
               <span style={{fontFamily:"Cinzel, serif"}} className="text-6xl md:text-7xl font-extrabold tracking-wide">XTUS</span>
