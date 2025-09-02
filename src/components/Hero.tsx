@@ -31,7 +31,7 @@ const Hero = () => {
             <h1 className="text-5xl md:text-7xl font-playfair font-bold text-primary-foreground text-balance">
               <div className="flex items-center justify-center gap-0 mb-2">
   <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">T</span>
-  <img src="/logo-e.png" alt="E estilizado" className="h-[48px] md:h-[64px] mx-1 select-none" />
+  <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">E</span>
   <span style={{fontFamily:"Cinzel, serif"}} className="tracking-wide">XTUS</span>
 </div>
               
