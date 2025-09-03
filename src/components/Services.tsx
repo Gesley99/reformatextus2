@@ -155,24 +155,6 @@ const Services = () => {
   )}
 </div>
 
-          <div>
-            <h4 className="font-semibold mb-2">O que não fazemos</h4>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Não coletamos fotos, dados pessoais ou entrevistas.</li>
-              <li>Não executamos atividades de campo.</li>
-              <li>Essas ações ficam sob responsabilidade da equipe do aluno.</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-2">Entregamos</h4>
-            <ul className="list-disc pl-5 space-y-1">
-              <li>Documento do projeto.</li>
-              <li>Cronograma básico.</li>
-            </ul>
-          </div>
-        </div>
-      </DialogContent>
-    </Dialog>
   ) : (
     <Button variant="hero" className="w-full">Saiba Mais</Button>
   )}
