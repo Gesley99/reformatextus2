@@ -155,10 +155,6 @@ const Services = () => {
   )}
 </div>
 
-  ) : (
-    <Button variant="hero" className="w-full">Saiba Mais</Button>
-  )}
-</div>
 
                 </CardContent>
               </Card>
